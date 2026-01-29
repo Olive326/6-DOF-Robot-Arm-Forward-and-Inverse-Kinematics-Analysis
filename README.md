@@ -6,6 +6,8 @@ Comprehensive kinematic analysis of a 6 DOF robotic manipulator implementing bot
 
 ### Approach
 Computed end-effector position from joint angles using the Denavit-Hartenberg convention and homogeneous transformation matrices.
+<img width="1196" height="1080" alt="image" src="https://github.com/user-attachments/assets/e7038ef9-cabe-4066-b063-91592f56fcec" />
+
 
 ### Implementation
 1.Derived DH parameters(link lengths, twist engles, offsets) from robot geometry
@@ -36,10 +38,11 @@ Handles 6-DOF complexity without closed-form solutions
 
 ### Algorithms:
 For each waypoints:
-1. Compute error: e= desired_pose- current_pose
-2.Calculate Jacobian (6x6 matrix)
-3.Update joints: Δθ = (J'J + λI)⁻¹J'e  (damped least squares)
-4.Repeat until error < 0.001mm
+Compute error: 
+- e= desired_pose- current_pose
+- Calculate Jacobian (6x6 matrix)
+- Update joints: Δθ = (J'J + λI)⁻¹J'e  (damped least squares)
+- Repeat until error < 0.001mm
 
 ### Test case:
 Square trajectory with 400 waypoints in Cartesian space(100mm sides, 1mm spacing).
