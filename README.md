@@ -6,9 +6,9 @@ Comprehensive kinematic analysis of a 6 DOF robotic manipulator implementing bot
 
 ### Approach
 Computed end-effector position from joint angles using the Denavit-Hartenberg convention and homogeneous transformation matrices.
-**DH Parameters**
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e7038ef9-cabe-4066-b063-91592f56fcec" />
-
+<p align="center">
+  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e7038ef9-cabe-4066-b063-91592f56fcec" />
+<\p>
 ### DH Parameters
 
 | Joint | a (mm) | α (rad) | d (mm) | θ (variable) |
@@ -43,8 +43,8 @@ Generated smooth oscillating motion with 650 waypoints:
 Implemented Newton’s iteration method with Jacobian-based updates to compute joint angles for desired end-effector positions.
 
 ### Why newton’s method?
-✅- Works for any robot configuration(no geometric constrains)
-✅- Handles 6-DOF complexity without closed-form solutions
+- ✅ Works for any robot configuration(no geometric constrains)
+- ✅ Handles 6-DOF complexity without closed-form solutions
 
 ### Algorithms:
 For each waypoints:
@@ -58,8 +58,9 @@ Compute error:
 Square trajectory with 400 waypoints in Cartesian space(100mm sides, 1mm spacing).
 
 ### Results: 
-<img width="541" height="478" alt="image" src="https://github.com/user-attachments/assets/fe0fecbe-4466-4ab5-9b4d-948a960e88cf" />
-
+<p align="center">
+  <img width="541" height="478" alt="image" src="https://github.com/user-attachments/assets/fe0fecbe-4466-4ab5-9b4d-948a960e88cf" />
+<\p>
 ### Key Insight:** Using previous waypoint’s solution guess reduced convergence from 50 to just 3 iterations for most waypoints.
 
 ## Demo & Documentation
