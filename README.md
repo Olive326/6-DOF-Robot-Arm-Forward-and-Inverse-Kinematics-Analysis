@@ -7,10 +7,11 @@ Comprehensive kinematic analysis of a 6 DOF robotic manipulator implementing bot
 ### Approach
 Computed end-effector position from joint angles using the Denavit-Hartenberg convention and homogeneous transformation matrices.
 <p align="center">
-  <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/e7038ef9-cabe-4066-b063-91592f56fcec" />
+  <img width="430" height="400" alt="image" src="https://github.com/user-attachments/assets/e7038ef9-cabe-4066-b063-91592f56fcec" />
 </p>
-### DH Parameters
 
+### DH Parameters
+<div align="center>
 | Joint | a (mm) | α (rad) | d (mm) | θ (variable) |
 |:-----:|:------:|:-------:|:------:|:------------:|
 | 1     | 65     | π/2     | 135    | θ₁           |
@@ -19,7 +20,7 @@ Computed end-effector position from joint angles using the Denavit-Hartenberg co
 | 4     | 0      | π/2     | 215    | θ₄           |
 | 5     | 0      | π/2     | 0      | θ₅           |
 | 6     | 0      | 0       | 55     | θ₆           |
-
+</div>
 ### Implementation
 1.Derived DH parameters(link lengths, twist engles, offsets) from robot geometry
 2.Applied 4x4 homogeneous transformation matrics combining rotation and translation
@@ -57,13 +58,16 @@ Compute error:
 ### Test case:
 Square trajectory with 400 waypoints in Cartesian space(100mm sides, 1mm spacing).
 
+
 ### Results: 
+<div align="center>
 | Metric | Value |
 |--------|-------|
 | **Position Error (mean)** | 0.0003mm |
 | **Cold Start Iterations** | 50 iterations |
 | **Warm Start Iterations** | 3 iterations |
 | **Convergence Rate** | 100% (400/400) |
+</div>
 <p align="center">
   <img width="625" height="565" alt="image" src="https://github.com/user-attachments/assets/ee7bf6ec-39f3-4d7b-b5ec-9b90ab230ca4" />
 </p>
