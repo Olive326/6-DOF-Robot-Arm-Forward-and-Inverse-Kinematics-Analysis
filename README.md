@@ -11,7 +11,8 @@ Computed end-effector position from joint angles using the Denavit-Hartenberg co
 </p>
 
 ### DH Parameters
-<div align="center>
+
+<div align="center">
   
 | Joint | a (mm) | α (rad) | d (mm) | θ (variable) |
 |:-----:|:------:|:-------:|:------:|:------------:|
@@ -35,7 +36,7 @@ Generated smooth oscillating motion with 650 waypoints:
 θ₂(t) = 20° + 30°·sin(t)     (shoulder oscillation)
 θ₃(t) = -40° + 25°·sin(2t)   (elbow at double frequency)
 ```
-### Results:
+### Results
 - Average waypoint spacing:1.06 mm
 - Successfully maintained fixed end-effector orientation
 - Demonstrated nonlinear joint-to-task space mapping
@@ -50,7 +51,7 @@ Implemented Newton’s iteration method with Jacobian-based updates to compute j
 - ✅ Works for any robot configuration(no geometric constrains)
 - ✅ Handles 6-DOF complexity without closed-form solutions
 
-### Algorithms:
+### Algorithms
 For each waypoints:
 Compute error: 
 - e= desired_pose- current_pose
@@ -58,12 +59,12 @@ Compute error:
 - Update joints: Δθ = (J'J + λI)⁻¹J'e  (damped least squares)
 - Repeat until error < 0.001mm
 
-### Test case:
+### Test case
 Square trajectory with 400 waypoints in Cartesian space(100mm sides, 1mm spacing).
 
 
-### Results: 
-<div align="center>
+### Results 
+<div align="center">
   
 | Metric | Value |
 |--------|-------|
@@ -78,7 +79,8 @@ Square trajectory with 400 waypoints in Cartesian space(100mm sides, 1mm spacing
   <img width="625" height="565" alt="image" src="https://github.com/user-attachments/assets/ee7bf6ec-39f3-4d7b-b5ec-9b90ab230ca4" />
 </p>
 
-### Key Insight: Using previous waypoint’s solution guess reduced convergence from 50 to just 3 iterations for most waypoints.
+### Key Insight
+Using previous waypoint’s solution guess reduced convergence from 50 to just 3 iterations for most waypoints.
 
 <p align="center">
   <img width="610" height="451" alt="image" src="https://github.com/user-attachments/assets/da57214d-e3f2-4e1c-b310-fc11cc2f0963" />
