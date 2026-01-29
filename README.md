@@ -58,12 +58,20 @@ Compute error:
 Square trajectory with 400 waypoints in Cartesian space(100mm sides, 1mm spacing).
 
 ### Results: 
+| Metric | Value |
+|--------|-------|
+| **Position Error (mean)** | 0.0003mm |
+| **Cold Start Iterations** | 50 iterations |
+| **Warm Start Iterations** | 3 iterations |
+| **Convergence Rate** | 100% (400/400) |
 <p align="center">
-  <img width="541" height="478" alt="image" src="https://github.com/user-attachments/assets/fe0fecbe-4466-4ab5-9b4d-948a960e88cf" />
+  <img width="625" height="565" alt="image" src="https://github.com/user-attachments/assets/ee7bf6ec-39f3-4d7b-b5ec-9b90ab230ca4" />
 </p>
-### Key Insight:** Using previous waypoint’s solution guess reduced convergence from 50 to just 3 iterations for most waypoints.
-
+### Key Insight: Using previous waypoint’s solution guess reduced convergence from 50 to just 3 iterations for most waypoints.
+<p align="center">
+  <img width="610" height="451" alt="image" src="https://github.com/user-attachments/assets/da57214d-e3f2-4e1c-b310-fc11cc2f0963" />
+</p>
 ## Demo & Documentation
-**Video Demo:**[YouTube Animation]([https://youtu.be/BIbAoDZN7so?si=KMd5PT8OXu11Swr])
-**Full Report:**
+- **Video Demo:**[YouTube Animation]([https://youtu.be/BIbAoDZN7so?si=KMd5PT8OXu11Swr])
+- **Full Report:**
 
