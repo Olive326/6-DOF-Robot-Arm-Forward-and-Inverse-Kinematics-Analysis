@@ -26,9 +26,9 @@ Computed end-effector position from joint angles using the Denavit-Hartenberg co
 </div>
   
 ### Implementation
-1.Derived DH parameters(link lengths, twist engles, offsets) from robot geometry
-2.Applied 4x4 homogeneous transformation matrics combining rotation and translation
-3.Computed complete transformation:
+- Derived DH parameters(link lengths, twist engles, offsets) from robot geometry
+- Applied 4x4 homogeneous transformation matrics combining rotation and translation
+- Computed complete transformation:
 
 ### Trajectory Generation
 Generated smooth oscillating motion with 650 waypoints:
@@ -76,17 +76,17 @@ Square trajectory with 400 waypoints in Cartesian space(100mm sides, 1mm spacing
 </div>
 
 <p align="center">
-  <img width="625" height="565" alt="image" src="https://github.com/user-attachments/assets/ee7bf6ec-39f3-4d7b-b5ec-9b90ab230ca4" />
+  <img width="425" height="400" alt="image" src="https://github.com/user-attachments/assets/ee7bf6ec-39f3-4d7b-b5ec-9b90ab230ca4" />
 </p>
 
 ### Key Insight
 Using previous waypoint’s solution guess reduced convergence from 50 to just 3 iterations for most waypoints.
 
 <p align="center">
-  <img width="610" height="451" alt="image" src="https://github.com/user-attachments/assets/da57214d-e3f2-4e1c-b310-fc11cc2f0963" />
+  <img width="410" height="400" alt="image" src="https://github.com/user-attachments/assets/da57214d-e3f2-4e1c-b310-fc11cc2f0963" />
 </p>
 
 ## Demo & Documentation
-- **Video Demo:**[YouTube Animation]([https://youtu.be/BIbAoDZN7so?si=KMd5PT8OXu11Swr])
+- **Video Demo:**[YouTube Animation](https://youtu.be/BIbAoDZN7so?si=KMd5PT8OXu11Swr)
 - **Full Report:**
 
