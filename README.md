@@ -87,6 +87,6 @@ Using previous waypoint’s solution guess reduced convergence from 50 to just 3
 </p>
 
 ## Demo & Documentation
-- **Video Demo:**[YouTube Animation](https://youtu.be/BIbAoDZN7so?si=KMd5PT8OXu11Swr)
-- **Full Report:**
+- **Video Demo:**[YouTube Animation] (https://youtu.be/BIbAoDZN7so?si=KMd5PT8OXu11Swr)
+- **Full Report:**[View on Google Drive] (https://drive.google.com/file/d/13NgDEsAn5z4iaS10prks-zcyhr-bDQJE/view?usp=drive_link)
 
